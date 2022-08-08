@@ -1,8 +1,8 @@
 # A Bot made with Spring-Boot Java.
 
-## Local Setup
+## Bot Setup
 
-The test only needs to be updated with your secrets. For example, to get started with Twitter go to https://developer.twitter.com/ to get your keys.
+The repo only needs to be updated with your secrets. For example, to get started with Twitter go to https://developer.twitter.com/ to get your keys.
 Next, update the test suite and the appropriate classes for the bot you want to use.
 
 
@@ -10,16 +10,16 @@ Next, update the test suite and the appropriate classes for the bot you want to 
 To see your bots output run:
 `$` `mvn spring-boot:run`
 
-### Adding Web3
+## Adding Web3
 https://www.baeldung.com/web3j was used in refrence to make this dapps Web3 portion. Project is still on going.
 
-#### Run & Test Locally
+#### To Run & Test Locally
 
-'$' 'truffle init'
-'$' 'truffle compile'
-'$' 'truffle migrate'
-'$' 'truffle test'
+`$` `truffle init`
+`$` `truffle compile`
+`$` `truffle migrate`
+`$` `truffle test`
 
-Try running the code from your browser! Just click and Go!
+##Try running the code from your browser! 
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/juanresendiz813/botswithspring)
+Just click and Go! [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/juanresendiz813/botswithspring)
