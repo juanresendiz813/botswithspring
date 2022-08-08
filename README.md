@@ -15,9 +15,9 @@ https://www.baeldung.com/web3j was used in refrence to make this dapps Web3 port
 
 #### To Run & Test Locally
 
-`$` `truffle init`
-`$` `truffle compile`
-`$` `truffle migrate`
+`$` `truffle init`<br>
+`$` `truffle compile`<br>
+`$` `truffle migrate`<br>
 `$` `truffle test`
 
 ## Try running the code from your browser! 
