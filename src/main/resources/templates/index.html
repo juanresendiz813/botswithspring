@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <title>Crawl Central</title>
+</head>
+
+<body class="font-inter antialiased bg-slate-100 text-slate-600"
+      :class="{ 'sidebar-expanded': sidebarExpanded }"
+      x-data="{ page: 'dashboard-main', sidebarOpen: false, sidebarExpanded: localStorage.getItem('sidebar-expanded') == 'true' }"
+      x-init="$watch('sidebarExpanded', value => localStorage.setItem('sidebar-expanded', value))">
+
+<!-- Page wrapper -->
+<div class="flex h-screen overflow-hidden">
+    <!-- Sidebar -->
+<!--    <div th:replace="partials/sidebarnew :: sidebar"></div>-->
+    <!-- Content area -->
+    <div class="relative flex flex-col flex-1 overflow-y-auto overflow-x-hidden">
+        <!-- Site header -->
+<!--        <div th:replace="partials/header :: header"></div>-->
+        <main>
+            <p th:text="${obj}">
+            </p>
+<!--            <div class="px-4 sm:px-6 lg:px-8 py-8 w-full max-w-9xl mx-auto">-->
+<!--                <div th:if="${partials.contains('usersummary')}">-->
+<!--                    <div th:replace="partials/dashboard-actionsnew :: actions"></div>-->
+<!--                </div>-->
+<!--                &lt;!&ndash; Cards &ndash;&gt;-->
+<!--                <div th:if="${partials.equals('usersummary')}">-->
+<!--                    <div class="grid grid-cols-12 gap-6">-->
+<!--                        <div th:replace="partials/dashboard-card-usersummary :: currentapplications"></div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div th:if="${partials.equals('details')}">-->
+<!--                    <div class="grid grid-cols-12 gap-6">-->
+<!--                        <div th:replace="partials/dashboard-card-crawlsummary :: currentapplications2"></div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div th:if="${partials.equals('create')}">-->
+<!--                    <div class="grid grid-cols-12 gap-6">-->
+<!--                        <div th:replace="partials/dashboard-card-crawlcreation :: currentapplications3"></div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div th:if="${partials.equals('create2')}">-->
+<!--                    <div class="grid grid-cols-12 gap-6">-->
+<!--                        <div th:replace="partials/dashboard-card-crawlcreation2 :: currentapplications4"></div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div th:if="${partials.equals('create3')}">-->
+<!--                    <div class="grid grid-cols-12 gap-6">-->
+<!--                        <div th:replace="partials/dashboard-card-crawlcreation3 :: currentapplications5"></div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div th:if="${partials.equals('create4')}">-->
+<!--                    <div class="grid grid-cols-12 gap-6">-->
+<!--                        <div th:replace="partials/dashboard-card-crawlcreation4 :: currentapplications6"></div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div th:if="${partials.equals('template')}">-->
+<!--                    <div class="grid grid-cols-12 gap-6">-->
+<!--                        <div th:replace="partials/dashboard-card-template.html :: templatesearch"></div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+        </main>
+    </div>
+</div>
+</body>
+</html>
