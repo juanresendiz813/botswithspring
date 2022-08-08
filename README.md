@@ -22,5 +22,5 @@ https://www.baeldung.com/web3j was used in refrence to make this dapps Web3 port
 
 ## Try running the code from your browser! 
 
-Just click and Go! 
+Just click and Go! <br>
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/juanresendiz813/botswithspring)
